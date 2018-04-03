@@ -5,7 +5,7 @@ import Loader from 'components/Loader'
 
 class Home extends Component {
   render () {
-    return <Loader color="#aaa" type="line-scale" style={{ textAlign: 'center', marginTop: '13rem' }} />
+    return <Loader color="#aaa" type="line-scale" style={{ textAlign: 'center' }} />
   }
 }
 
