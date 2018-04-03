@@ -175,4 +175,4 @@ function sso_logout() {
             sso_checkToken();
         }
     }
-})()w
+})()
