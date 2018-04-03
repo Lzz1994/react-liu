@@ -5,6 +5,7 @@ import AsyncComponent from 'components/AsyncComponent'
 import './App.less'
 
 const Home = AsyncComponent(() => import(/* webpackChunkName: "home" */'containers/Home'))
+const Graph = AsyncComponent(() => import(/* webpackChunkName: "graph" */'containers/Graph'))
 
 @withRouter
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/test" render={() => <h1>Test</h1>} />
+          <Route path="/graph/:id" component={Graph} />
         </Switch>
       </div>
     )
